@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio Rheina Revani</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins','Segoe UI',sans-serif;
+    background:linear-gradient(135deg,#d9eeee,#f4fbfd);
+    color:#2f3e46;
+    line-height:1.8;
+}
+
+/* ================= HEADER ================= */
+header{
+    background:linear-gradient(135deg,#084f54,#0b6f6b);
+    padding:3rem 1rem 2.5rem;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 15px 40px rgba(0,0,0,.3);
+}
+
+header h1{
+    color:#fff;
+    font-size:2.4rem;
+    margin-bottom:1.2rem;
+    letter-spacing:1px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:2.5rem;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-weight:600;
+    padding:.6rem 1.6rem;
+    border-radius:30px;
+    transition:.35s;
+}
+
+nav ul li a:hover{
+    background:rgba(255,255,255,.2);
+    transform:translateY(-3px);
+}
+
+/* ================= SECTION ================= */
+section{
+    width:90%;
+    max-width:1100px;
+    margin:4rem auto;
+    padding:3.5rem 2.5rem;
+    background:rgba(255,255,255,.75);
+    border-radius:24px;
+    backdrop-filter:blur(14px);
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+}
+
+section h2{
+    text-align:center;
+    font-size:2.3rem;
+    color:#0b6f6b;
+    margin-bottom:3rem;
+}
+
+/* ================= ABOUT ================= */
+.about-container{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:3.5rem;
+    align-items:center;
+}
+
+.about-photo{
+    text-align:center;
+}
+
+.about-photo img{
+    width:240px;
+    height:240px;
+    object-fit:cover;
+    border-radius:50%;
+    border:7px solid #0b6f6b;
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.25),
+        0 0 0 10px rgba(11,111,107,.12);
+}
+
+.about-text h1{
+    font-size:2.7rem;
+    color:#0b6f6b;
+    margin-bottom:1.2rem;
+}
+
+.about-text p{
+    font-size:1.15rem;
+    color:#3b5f60;
+    max-width:720px;
+}
+
+/* ================= PROJECT ================= */
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:3rem;
+}
+
+.project{
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+    transition:.45s ease;
+}
+
+.project:hover{
+    transform:translateY(-12px);
+    box-shadow:0 35px 60px rgba(0,0,0,.22);
+}
+
+.project img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    transition:.5s ease;
+}
+
+.project:hover img{
+    transform:scale(1.08);
+}
+
+.project h3{
+    font-size:1.4rem;
+    color:#0b6f6b;
+    margin:1.4rem 1.5rem .6rem;
+}
+
+.project p{
+    padding:0 1.5rem 2rem;
+    color:#4f6f70;
+    font-size:1.05rem;
+}
+
+/* ================= CONTACT ================= */
+#contact p{
+    text-align:center;
+    font-size:1.1rem;
+    margin:.9rem 0;
+}
+
+#contact strong{
+    color:#0b6f6b;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    background:linear-gradient(135deg,#0b6f6b,#084f54);
+    text-align:center;
+    padding:2rem;
+    color:#fff;
+    font-weight:500;
+    letter-spacing:.5px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+    .about-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+}
+
+@media(max-width:600px){
+    header h1{
+        font-size:1.9rem;
+    }
+
+    section{
+        padding:2.5rem 1.8rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Portofolio Rheina Revani</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#projects">PROJECT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about">
+    <div class="about-container">
+        <div class="about-photo">
+            <img src="images/foto formal.jpg" alt="Foto Rheina Revani">
+        </div>
+        <div class="about-text">
+            <h1>RHEINA REVANI</h1>
+            <p>
+                Hai, aku Rheina Revani, mahasiswa S1 Sistem Informasi Universitas Negeri Surabaya.
+                Aku tertarik pada pengembangan website, UI/UX, serta sistem informasi berbasis teknologi.
+                Saat ini aku terus mengasah kemampuan HTML, CSS, dan desain antarmuka modern.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>PROJECT SAYA</h2>
+    <div class="projects-grid">
+        <div class="project">
+            <img src="images/odoo.png" alt="Project Odoo ERP">
+            <h3>Project Odoo ERP – Draline Skincare</h3>
+            <p>
+                Project akhir mata kuliah Dasar ERP berupa sistem Enterprise Resource Planning
+                dengan studi kasus perusahaan retail skincare bernama Draline.
+            </p>
+        </div>
+
+        <div class="project">
+            <img src="images/web.png" alt="Website Restoran Derasa">
+            <h3>Website Restoran Derasa</h3>
+            <p>
+                Website restoran dengan sistem pemesanan, pembayaran, dan manajemen operasional
+                yang inovatif serta adaptif bagi pelanggan dan karyawan.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>CONTACT SAYA</h2>
+    <p><strong>Instagram:</strong> @vnirhna</p>
+    <p><strong>TikTok:</strong> Rhnarvn</p>
+    <p><strong>Email:</strong> rheinarevani0606@gmail.com</p>
+    <p><strong>Email Profesional:</strong> 24051214182@mhs.unesa.ac.id</p>
+    <p><strong>No HP:</strong> 087764019538</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Rheina Revani. Semua hak cipta dilindungi.</p>
+</footer>
+
+</body>
+</html>
